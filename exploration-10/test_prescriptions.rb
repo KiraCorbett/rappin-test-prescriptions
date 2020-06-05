@@ -62,12 +62,16 @@ class RappinTestPrescriptions
 		]
 	end
 
-	def get_user_request()
+	def welcome()
 		puts "--------------------------------------------------------"
 		puts "Welcome to the Rails 5 Test Prescriptions by Noel Rappin\n"
 		puts "--------------------------------------------------------\n\n"
 		puts "Select a number...\n"
 		puts "Option (1): Print ALL Rappin || Option (2): Print Favorites\n"
+	end
+
+	def get_user_request()
+		welcome
 		input = gets.chomp
 
 		if input.to_i == 1
